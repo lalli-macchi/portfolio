@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Laura Fiorio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="//unpkg.com/swiper/css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-pagination-bullet-active {
+      background: black;
+    }
+    .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet{
+      margin: 10px 0;
+    }
+
+    .swiper-slide img {
+      height: 100%;
+    }
+    header {
+      height: 60px;
+      background:
+      white;
+      padding-bottom: 15px;
+    }
+    header .brand {
+      padding: 15px;
+      display: inline-block;
+    }
+    header .brand .logo {
+      font-size: 32px;
+    }
+    header .menu-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 60px;
+      display: inline-block;
+      float: right;
+    }
+    header .menu-item {
+      float: left;
+    }
+    header .menu-item a {
+      font-size: 145%;
+      color:
+      #000000;
+      font-weight: 500;
+      display: block;
+      line-height: 63px;
+      display: block;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    #footer {
+      height:60px;
+      background: white;
+      text-align: center;
+    }
+    #footer .copyright {
+      float: right;
+      color:
+      #6b6b6b;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header class="section header">
+    
+    <div class="menu">
+      <div class="brand">
+        <span class="logo">LAURA FIORIO</span>
+      </div>
+
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#">ABOUT</a></li>
+        <li class="menu-item"><a href="#">PROJECTS</a></li>
+        <li class="menu-item"><a href="#">CONTACT</a></li>
+        <li class="menu-item"><a href="#">CREDITS</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/001_001_VanishingLakes_3844.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/002_030_IMG_0326.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/003_img854.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/004_IMG_3247.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/005_03._Lavori_in_corso_a_ridosso_di_un_edificio_storico.jpg" />
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/images/home/Files_Slideshow/006_IMG_2987-Edit.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/007_IMG_3503.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/008_001_IMG_1687.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/009_IMG_3303-Edit.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/010_016_Fiorio_Coke.jpg" />
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  <footer id="footer">
+    
+    <div class="copyright">© 2019 Laura Fiorio</div>
+        
+  </footer>
+
+
+
+
+  <!-- Swiper JS -->
+   <script src="assets/lib/js-ready-master/js-ready-master/dist/js-ready.min.js"></script>
+  <script src="//unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    ready(function(){
+        swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        mousewheel: true,
+        slidesPerView: 1,
+        spaceBetween: 100,
+        lazy: true,
+        autoHeight: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        }
+      });
+    });
+    
+  </script>
+</body>
+</html>
