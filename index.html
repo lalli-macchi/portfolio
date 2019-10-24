@@ -15,23 +15,29 @@
       height: 100%;
     }
     body {
-      background: #eee;
+      background: #fff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      color:#000;
+      color:#646161;
       margin: 0;
       padding: 0;
+      display: grid;
+      align-items: center;
+      grid-template-columns: auto auto;
+      grid-gap: 15px;
     }
+
     .swiper-container {
-      width: 100%;
-      height: 100%;
+      max-width: 100%;
+      max-height: 750px;
+      width:100%;
+      height:auto;
+      float: right;
     }
     .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
-
-      /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -45,6 +51,7 @@
       -webkit-align-items: center;
       align-items: center;
     }
+    
     .swiper-pagination-bullet-active {
       background: black;
     }
@@ -53,52 +60,91 @@
     }
 
     .swiper-slide img {
-      height: 100%;
+      height: auto;
+      max-width: auto;
     }
+    @media only screen and (min-width: 1200px) {
+      
+      header {
+        margin-top: 20%;
+        margin-left: 2rem;
+        padding-bottom: 15px;
+        height: 100%;
+      }
+      
+      header .brand .logo {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      header p {
+        padding: 15px;
+      }
+      header p::after {
+        font-size: 21px;
+      }
+    }
+    
+    @media only screen and (min-width: 767px) {
+      header {
+        margin-top: 15%;
+        padding-bottom: 15px;
+        height: 100%;
+      }
+      
+      header .brand .logo {
+        font-size: 28px;
+        line-height: 40px;
+      }
+      header p {
+        padding: 15px;
+      }
+      header p::after {
+        font-size: 21px;
+      }
+    }
+
+    @media only screen and (max-width: 768px ) {
+      
+      header {
+        position: fixed;
+        top:0px;
+        max-width: 100%;
+        z-index:999;
+        width:100%;
+        height: 45px;
+        overflow: hidden;
+      }
+
+      header .brand .logo {
+        font-size: 21px;
+      }
+      
+      header p::after {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+
+    header .brand {
+      padding: 15px 0px 0px 15px;
+      display: inline-block;
+    }
+    header p {
+      padding: 15px 0px 0px 15px;
+    }
+    header p::after {
+      content: 'Website \A Under \A Construction';
+      white-space: pre;
+    }
+
     header {
-      height: 60px;
       background:
       white;
-      padding-bottom: 15px;
+      
     }
-    header .brand {
-      padding: 15px;
-      display: inline-block;
-    }
-    header .brand .logo {
-      font-size: 32px;
-    }
-    header .menu-list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      height: 60px;
-      display: inline-block;
-      float: right;
-    }
-    header .menu-item {
-      float: left;
-    }
-    header .menu-item a {
-      font-size: 145%;
-      color:
-      #000000;
-      font-weight: 500;
-      display: block;
-      line-height: 63px;
-      display: block;
-      text-align: center;
-      padding: 16px;
-      text-decoration: none;
-    }
-    #footer {
-      height:60px;
-      background: white;
-      text-align: center;
-    }
+    
     #footer .copyright {
-      float: right;
+      padding: 15px 0px 0px 15px;
       color:
       #6b6b6b;
       font-size: 90%;
@@ -108,19 +154,28 @@
 <body>
 
 
+
   <header class="section header">
     
     <div class="menu">
       <div class="brand">
         <span class="logo">LAURA FIORIO</span>
       </div>
-
-      <ul class="menu-list">
+      <div>
+        <p> 
+        </p>
+      </div>
+      <footer id="footer">
+        
+        <div class="copyright">© 2019 Laura Fiorio</div>
+            
+      </footer>
+      <!--ul class="menu-list">
         <li class="menu-item"><a href="#">ABOUT</a></li>
         <li class="menu-item"><a href="#">PROJECTS</a></li>
         <li class="menu-item"><a href="#">CONTACT</a></li>
         <li class="menu-item"><a href="#">CREDITS</a></li>
-      </ul>
+      </ul-->
     </div>
   </header>
 
@@ -158,16 +213,134 @@
         <div class="swiper-slide">
           <img src="assets/images/home/Files_Slideshow/010_016_Fiorio_Coke.jpg" />
         </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/011_IMG_3322-Edit.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/012_IMG_4157.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/013_002__MG_8305-Edit.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/014_LF_AQ_interni_2010_06_R12F07.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/015_008_IMG_0245.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/016_LF_AQ_notturni_int_2010_06_R02F03.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/017_IMG_4391-Edit.jpg" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/019_USA_03108.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/020_010_VanishingLakes_4328.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/021_USA_02946.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/022_013_Fiorio_BanchinaDeiMolini_Top.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/023_LF_AQ_notturni_est_2010_06_R05F04.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/024_001_Fiorio_BanchinaDeiMolini_CerealDocks.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/025_IMG_5228-Edit.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/026_Mine_Mysore_8035.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/027_036_VanishingLakes_5120.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/028_011_Fiorio_BanchinaDeiMolini_Margherita.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/029__MG_5744.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/030_IMG_3198.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/031__MG_1993-Modifica.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/032_2010Valencia_Cabanyal_Blatt01_F018.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/033__MG_5804.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/034_BorderStudio.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/035_IMG_0992.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/036_DSC00954.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/037_DSC00971.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/038_IMG_2050.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/039__MG_7182.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/040__MG_7183.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/041_012_CoGalleries9891_PORTRA_COMM.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/042_Screen_Shot_2018-10-02_at_22.15.38.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/043_Portfolio_Books_0329.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/044_002_Portfolio_Books_0327_PERS.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/045__MG_7459.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/046_Portfolio_Books_0502.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/047_2019-01-08_10.54.41.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/048_LBC_InstView_01163.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/049_001_VanishingLakes_5785_BACK_EXHIBIZ.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/050_IMG_8100.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home/Files_Slideshow/051_IMG_0877.jpg" />
+        </div>
+
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
     </div>
 
-  <footer id="footer">
-    
-    <div class="copyright">© 2019 Laura Fiorio</div>
-        
-  </footer>
+
 
 
 
@@ -185,11 +358,11 @@
         slidesPerView: 1,
         spaceBetween: 100,
         lazy: true,
-        autoHeight: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        }
+        autoHeight:false,
+        autoplay: {
+            delay: 4000,
+        },
+        effect: 'fade'
       });
     });
     
