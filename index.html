@@ -63,6 +63,32 @@
       height: auto;
       max-width: auto;
     }
+
+    header .brand {
+      padding: 15px 0px 0px 15px;
+      display: inline-block;
+    }
+    header p {
+      padding: 15px 0px 0px 15px;
+    }
+    header p::after {
+      content: 'Website \A Under \A Construction';
+      white-space: pre;
+    }
+
+    header {
+      background:
+      white;
+      
+    }
+    
+    #footer .copyright {
+      padding: 15px 0px 0px 15px;
+      color:
+      #6b6b6b;
+      font-size: 90%;
+    }
+    
     @media only screen and (min-width: 1200px) {
       
       header {
@@ -117,6 +143,11 @@
 
       header .brand .logo {
         font-size: 21px;
+        transform-origin: 0 0;
+        transform: rotate(180deg);
+        position: absolute;
+        left: 163px;
+        top:50px;
       }
       
       header p::after {
@@ -125,30 +156,8 @@
       }
     }
 
-    header .brand {
-      padding: 15px 0px 0px 15px;
-      display: inline-block;
-    }
-    header p {
-      padding: 15px 0px 0px 15px;
-    }
-    header p::after {
-      content: 'Website \A Under \A Construction';
-      white-space: pre;
-    }
 
-    header {
-      background:
-      white;
-      
-    }
     
-    #footer .copyright {
-      padding: 15px 0px 0px 15px;
-      color:
-      #6b6b6b;
-      font-size: 90%;
-    }
   </style>
 </head>
 <body>
