@@ -53,7 +53,12 @@
     .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet{
       margin: 10px 0;
     }
-
+    .swiper-slide:not(.swiper-slide-active){
+      opacity: 0 !important;
+    }
+    .swiper-slide.swiper-slide-active {
+      opacity: 1 !important;
+    }
     .swiper-slide img {
       object-fit: contain;
       margin: 20px;
@@ -215,23 +220,19 @@
        el.innerHTML = slidesContainer;
      }).then(function(){
         swiper = new Swiper('.swiper-container', {
-         preloadImages: true,
          keyboard: true,
-         cache: true,
          direction: 'vertical',
          slidesPerView: 1,
          mousewheel: true,
          loop: true,
          effect: 'fade',
          fadeEffect: {
-          crossFade: true,
-          speed: 100
+          crossFade: true
          },
          autoplay: {
             delay: 2500
           },
-          speed: 100,
-          setWrapperSize: true
+          speed: 200,
        });
      });
    </script>
