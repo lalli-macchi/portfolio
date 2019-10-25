@@ -28,11 +28,7 @@
     }
 
     .swiper-container {
-      max-width: 900px;
-      max-height: 600px;
-      width:100%;
-      height:auto;
-      float: right;
+  
     }
     .swiper-slide {
       text-align: center;
@@ -60,8 +56,7 @@
     }
 
     .swiper-slide img {
-      height: auto;
-      max-width: auto;
+      object-fit: contain;
     }
 
     header .brand .logo {
@@ -79,18 +74,57 @@
       white-space: pre;
     }
 
-    header {
-      background:
-      white;
-      
-    }
-    
     #footer .copyright {
       padding: 15px 0px 0px 15px;
       color:
       #6b6b6b;
       font-size: 90%;
     }
+
+    @media only screen and (min-width: 320px) {
+      .swiper-container {
+        max-width: 300px;
+        max-height: 200px;
+      }
+
+      header {
+        position: fixed;
+        top: 0px;
+        max-width: 100%;
+        z-index:999;
+        width:100%;
+        height: 0px;
+
+      }
+      header p::after {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+
+    @media only screen and (min-width: 460px) {
+      .swiper-container {
+        max-width: 600px;
+        max-height: 400px;
+      }
+
+    }
+    @media only screen and (min-width: 767px) {
+      .swiper-container {
+        max-width: 900px;
+        max-height: 600px;
+      }
+      
+      header .brand .logo {
+        font-size: 28px;
+        line-height: 40px;
+      }
+      header p {
+        padding: 15px;
+      }
+      
+    }
+    
 
     @media only screen and (min-width: 1200px) {
       
@@ -109,40 +143,10 @@
       header p {
         padding: 15px;
       }
-      header p::after {
-        font-size: 21px;
-      }
+      
     }
     
-    @media only screen and (min-width: 767px) {
-      
-      
-      header .brand .logo {
-        font-size: 28px;
-        line-height: 40px;
-      }
-      header p {
-        padding: 15px;
-      }
-      header p::after {
-        font-size: 21px;
-      }
-    }
-    @media only screen and (min-width: 320px) {
-      header {
-        position: fixed;
-        top: 0px;
-        max-width: 100%;
-        z-index:999;
-        width:100%;
-        height: 0px;
-
-      }
-      header p::after {
-        font-size: 12px;
-        line-height: 20px;
-      }
-    }
+    
     /*@media only screen and (max-width: 768px ) {
       
       header {
