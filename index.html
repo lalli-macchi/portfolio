@@ -76,7 +76,7 @@
     header p {
       padding: 15px 0px 0px 15px;
     }
-    header p::after {
+    #site-status p::after {
       content: 'Website \A Under \A Construction';
       white-space: pre;
     }
@@ -103,7 +103,7 @@
         height: 0px;
 
       }
-      header p::after {
+      #site-status p::after {
         font-size: 12px;
         line-height: 20px;
       }
@@ -133,7 +133,6 @@
     @media only screen and (min-width: 1200px) {
       
       header {
-        margin-top: 65%;
         margin-left: 2rem;
         padding-bottom: 15px;
         position: relative !important;
@@ -146,6 +145,12 @@
       
     }
     
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #000;
+    }
     
   </style>
 </head>
@@ -159,15 +164,24 @@
       <div class="brand">
         <span class="logo">LAURA FIORIO</span>
       </div>
-      <div>
+      
+      <div id="site-status">
         <p> 
         </p>
       </div>
+      <p>
+        
+        Contact: laurafiorio at gmail dot com
+        <br />
+        <a target="_blank" href="assets/LauraFiorio_Portfolio_ART.pdf">Profile Download Link</a>
+
+      </p>
       <footer id="footer">
         
         <div class="copyright">© 2019 Laura Fiorio</div>
             
       </footer>
+
       <!--ul class="menu-list">
         <li class="menu-item"><a href="#">ABOUT</a></li>
         <li class="menu-item"><a href="#">PROJECTS</a></li>
@@ -178,9 +192,10 @@
   </header>
 
 
+
     <!-- Swiper -->
     <div id="auto-slide" class="swiper-container">
-      </div>
+    </div>
 
 
 
