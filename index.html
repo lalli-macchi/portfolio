@@ -21,7 +21,7 @@
       margin: 0;
       padding: 0;
       display: grid;
-      align-items: center;
+      align-items: start;
       grid-template-columns: auto auto;
       grid-gap: 15px;
     }
@@ -66,8 +66,8 @@
 
     header .brand .logo {
       font-size: 18px;
-      color: #66ccff;;
-      border-bottom: 3px solid #66ccff;
+      color: #66ccff;
+
     }
     header .brand {
       padding: 15px 0px 0px 15px;
@@ -147,11 +147,18 @@
     
     a {
       text-decoration: none;
+      color: #66ccff;
     }
     a:hover {
-      color: #000;
+      color: rgba(102, 204, 255, 0.6);
     }
-    
+    .section.header{
+      height: 100%;
+    }
+    #btm-align {
+      position: absolute;
+      bottom: 35px;
+    }
   </style>
 </head>
 <body>
@@ -165,23 +172,31 @@
         <span class="logo">LAURA FIORIO</span>
       </div>
       
-      <div id="site-status">
-        <p> 
+      <div id="btm-align">
+        <div id="site-status">
+          <p> 
+          </p>
+        </div>
+        <p>
+          Please download my <br /> portfolio <a target="_blank" href="assets/LauraFiorio_Portfolio_ART.pdf">here</a>
         </p>
+          <br />
+          <p>
+            For assignment portfolio <br /> and for futher requests <br /> 
+            drop me a line at <br /> <a href="mailto:hello@laurafiorio.com">
+            hello(at)laurafiorio(dot)com
+          </a>
+          </p>
+          
+        
+        <footer id="footer">
+          
+          <div class="copyright">© 2019 Laura Fiorio</div>
+              
+        </footer>
+
       </div>
-      <p>
-        
-        Contact: laurafiorio at gmail dot com
-        <br />
-        <a target="_blank" href="assets/LauraFiorio_Portfolio_ART.pdf">Profile Download Link</a>
-
-      </p>
-      <footer id="footer">
-        
-        <div class="copyright">© 2019 Laura Fiorio</div>
-            
-      </footer>
-
+      
       <!--ul class="menu-list">
         <li class="menu-item"><a href="#">ABOUT</a></li>
         <li class="menu-item"><a href="#">PROJECTS</a></li>
