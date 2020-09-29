@@ -223,7 +223,7 @@
    <script type="text/javascript">
      var el = document.getElementById("auto-slide");
      var dataFetch = async function(){
-         var res = await fetch('//lalli-cockpit.test.openrun.net/api/singletons/get/homeSlider?token=account-b103bb2172a463bb4f1620e7889fb3');
+         var res = await fetch('http://lalli-cockpit.test.openrun.net/api/singletons/get/homeSlider?token=account-b103bb2172a463bb4f1620e7889fb3');
          var response = await res.json();
          return response;
        }
@@ -236,9 +236,9 @@
        <div class="swiper-wrapper">
        ${content.images.map(function(img){
          return `<div class="swiper-slide">
-           <img src="//lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=400&o=1" 
-             srcset="//lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=400&o=1 360w,
-             //lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=760&o=1 760w, //lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=900&o=1 900w"
+           <img src="http://lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=400&o=1" 
+             srcset="http://lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=400&o=1 360w,
+             http://lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=760&o=1 760w, http://lalli-cockpit.test.openrun.net/api/cockpit/image?token=account-b103bb2172a463bb4f1620e7889fb3&src=${img.path}&w=900&o=1 900w"
               sizes="(max-width: 320px) 300px,
                     (max-width: 480px) 400px,
                     (max-width: 760px) 760px,
